@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useState } from "react";
 import "./App.css";
 import Home from "./page/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -27,9 +27,14 @@ import royalEnfield from "./assist/productsBrand/RoyalEnfield.png";
 import nokia3360 from "./assist/productsBrand/Nokia-3360.png";
 import watch from "./assist/productsBrand/watch.png";
 import shose from "./assist/productsBrand/shose.png";
-import tShirt from "./assist/productsBrand/t-shirt.png";
+import Lodding from "./components/Lodding/Lodding";
 
 function App() {
+  const [showLodding, setshowLodding] = useState(true);
+  setTimeout(() => {
+    setshowLodding(false);
+  }, 2500);
+
   let cetagoryJson = [
     {
       id: 1,
@@ -6290,11 +6295,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <>
-          <Home />
-        </>
-      ),
+      element: <>{showLodding ? <Lodding /> : <Home />}</>,
     },
     {
       path: "/category",
