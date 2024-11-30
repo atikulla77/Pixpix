@@ -87,3 +87,19 @@
   background-color: white;
   color: #FBB03B;
 }
+
+
+
+/* ````````````Login & SignUp```````````` */
+.inputStyleIng[type="text"]:focus ~ .inputStyleIngText,
+.inputStyleIng[type="text"]:not(:placeholder-shown) ~ .inputStyleIngText {
+  @apply text-[#FBB03B] bg-[#fff] transform -translate-y-[22px] -translate-x-[3px] scale-75 cursor-default;
+}
+.inputStyleIng[type="email"]:focus ~ .inputStyleIngText,
+.inputStyleIng[type="email"]:not(:placeholder-shown) ~ .inputStyleIngText {
+  @apply text-[#FBB03B] bg-[#fff] transform -translate-y-[22px] -translate-x-[3px] scale-75 cursor-default;
+}
+.inputStyleIng[type="password"]:focus ~ .inputStyleIngText,
+.inputStyleIng[type="password"]:not(:placeholder-shown) ~ .inputStyleIngText {
+  @apply text-[#FBB03B] bg-[#fff] transform -translate-y-[22px] -translate-x-[3px] scale-75 cursor-default;
+}

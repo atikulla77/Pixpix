@@ -25,7 +25,9 @@ function NavberBottom() {
             </div>
 
             <div className="text-center">
+            <Link to={"/"}>
               <AiOutlineHome className="min-[500px]:text-[32px] text-[25px] cursor-pointer" />
+              </Link>
             </div>
             <div className="text-center">
               <Link to={"/category"}>
@@ -41,7 +43,9 @@ function NavberBottom() {
               </div>
             </div>
             <div className="text-center">
+            <Link to={"/login"}>
               <MdOutlineAccountCircle className="min-[500px]:text-[32px] text-[25px] cursor-pointer" />
+              </Link>
             </div>
           </div>
         </div>

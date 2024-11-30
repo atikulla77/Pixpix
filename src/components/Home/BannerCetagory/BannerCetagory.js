@@ -545,9 +545,20 @@ function BannerCetagory() {
             </div>
             {/* `````````````````````````````````````Main Nasted Nasted Cetagory````````````````````````````````````` */}
             <div
+                          onMouseEnter={() => {
+                            onEnableDesibleMainCetagoryColor(true);
+                            setonHoverMainCToDisplayN(true);
+                            setonHoverMainCToDisplayNNC(true);
+                            onEnableDasibleMainNestedCetagoryColor(true);
+                          }}
+                          onMouseLeave={() => {
+                            onEnableDesibleMainCetagoryColor(false);
+                            setonHoverMainCToDisplayN(false);
+                            setonHoverMainCToDisplayNNC(false);
+                          }}
               className={`${
                 onHoverMainCToDisplayNNC ? "screen3:flex hidden" : "hidden"
-              } top-0 right-0 screen1:w-[668px] screen6:w-[618px] screen2:w-[643px] screen5:w-[498px] w-[403px] h-[50px] px-[15px] absolute items-center rounded-tr-[8px] bg-[#fff] mb-[20px] z-[11]`}
+              } top-0 right-0 screen1:w-[668px] screen6:w-[618px] screen2:w-[643px] screen5:w-[498px] w-[403px] h-[50px] px-[15px] absolute items-center rounded-tr-[8px] bg-[#fff] border-t-[1px] mb-[20px] z-[11]`}
             >
               <p className="text-black px-[5px]">{tittleInMNNestedCetagory}</p>
             </div>

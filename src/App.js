@@ -28,6 +28,8 @@ import nokia3360 from "./assist/productsBrand/Nokia-3360.png";
 import watch from "./assist/productsBrand/watch.png";
 import shose from "./assist/productsBrand/shose.png";
 import Lodding from "./components/Lodding/Lodding";
+import Login from "./page/Login";
+import SignUp from "./page/SignUp";
 
 function App() {
   const [showLodding, setshowLodding] = useState(true);
@@ -6305,14 +6307,22 @@ function App() {
         </>
       ),
     },
-    // {
-    //   path: "/product",
-    //   element: (
-    //     <>
-    //       <Product />
-    //     </>
-    //   ),
-    // },
+    {
+      path: "/login",
+      element: (
+        <>
+          <Login />
+        </>
+      ),
+    },
+    {
+      path: "/sign_up",
+      element: (
+        <>
+          <SignUp />
+        </>
+      ),
+    },
   ]);
 
   return (

@@ -102,14 +102,14 @@ function Navber() {
             </div>
 
             <div className="screen3:flex hidden items-center lg:w-[48%] w-[83%] justify-center text-white">
-              <button className="flex mr-[10px] transition-all !duration-[0.3s] items-center hover:bg-[#ffebcc59] rounded-[7px] px-[10px] py-[6px]">
+              <a href="/login" className="flex mr-[10px] transition-all !duration-[0.3s] items-center hover:bg-[#ffebcc59] rounded-[7px] px-[10px] py-[6px]">
                 <BiUser className="text-[25px] pr-[5px]" />
                 <span className="text-[14px] font-[700]">Login</span>
-              </button>
+              </a>
               <span className="cursor-none">|</span>
-              <button className="flex transition-all !duration-[0.3s] ml-[10px] items-center hover:bg-[#ffebcc59] rounded-[7px] px-[10px] py-[6px]">
+              <a href="/sign_up" className="flex transition-all !duration-[0.3s] ml-[10px] items-center hover:bg-[#ffebcc59] rounded-[7px] px-[10px] py-[6px]">
                 <span className="text-[14px] font-[700] w-[52px]">Sign Up</span>
-              </button>
+              </a>
               <div className="relative ml-[10px]">
                 <div
                   className={` flex items-center rounded-[7px] px-[10px] py-[6px] transition-all !duration-[0.3s] cursor-pointer ${
