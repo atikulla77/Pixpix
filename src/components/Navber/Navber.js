@@ -138,12 +138,11 @@ function Navber() {
                   id="mobile-menu-language"
                 >
                   <div className="px-2 space-y-1 text-left">
-                    <a
-                      href=""
+                    <p
                       className="text-black block px-3 pb-[5px] pt-[15px] text-[13px] font-medium cursor-default"
                     >
                       Select Language
-                    </a>
+                    </p>
                   </div>
 
                   {Object.keys(language).map((key) => {
@@ -159,7 +158,7 @@ function Navber() {
                           } top-[3px]`}
                         />
                         <a
-                          href=""
+                          href="#"
                           className={` px-3 py-[2px] ml-[20px] text-[13px] font-medium ${
                             language[key] ? "text-black" : "text-[#FBB03B]"
                           }`}
