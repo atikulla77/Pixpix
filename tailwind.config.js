@@ -25,6 +25,7 @@ module.exports = {
       screen12: "555px",
       screen13: "530px",
       screen14: "850px",
+      screen15: "400px",
     },
   },
   plugins: [],

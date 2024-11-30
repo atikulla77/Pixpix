@@ -69,7 +69,7 @@ function Navber() {
         <div className="mx-auto px-2 sm:px-6 lg:px-8 xl:w-[1188px] w-[100%]">
           <div className="items-center h-16 flex justify-between w-full">
             <div
-              className="flex screen3:hidden w-[48px] h-[36px] justify-center items-center px-[5px] cursor-pointer transition-all !duration-[0.3s] bg-transparent rounded-[7px] mr-[15px]"
+              className="flex screen3:hidden screen15:w-[48px] w-[37px] justify-center items-center px-[5px] cursor-pointer transition-all !duration-[0.3s] bg-transparent rounded-[7px] screen15:mr-[15px] mr-[7px]"
               // style={{ boxShadow: "#6767679c 0px 1px 7px -2px" }}
             >
               <BiScan className="text-[29px]" />
@@ -89,14 +89,14 @@ function Navber() {
                 style={{ boxShadow: "0 0 2px 0 #00000040" }}
               >
                 <div className="absolute items-center right-[1px] flex pl-3">
-                  <button className="inline-block rounded-md border border-transparent bg-[#fbb03b59] px-[6px] screen3:py-[4px] py-[2px] text-center font-medium text-[#FBB03B] text-[22px] mr-[3px]">
+                  <button className="inline-block rounded-md border border-transparent bg-[#fbb03b59] screen15:px-[6px] px-[4px] screen3:py-[4px] screen15:py-[2px] py-[4px] text-center font-medium text-[#FBB03B] screen15:text-[22px] text-[19px] screen15:mr-[3px] mr-[2px]">
                     <AiOutlineSearch />
                   </button>
                 </div>
                 <input
                   type="text"
                   placeholder="Search in pixpix"
-                  className={`block w-full rounded-md screen3:py-[7px] py-[5px] pl-[16px] pr-[3rem] text-gray-900 bg-white placeholder:text-gray-400 outline-none text-[16px]`}
+                  className={`block w-full rounded-md screen3:py-[7px] screen15:py-[5px] py-[6px] screen15:pl-[16px] pl-[10px] screen15:pr-[3rem] pr-[2.4rem] text-gray-900 bg-white placeholder:text-gray-400 outline-none screen15:text-[16px] text-[14px]`}
                 />
               </div>
             </div>
@@ -176,13 +176,13 @@ function Navber() {
               </div>
             </div>
             <div
-              className="flex screen3:hidden w-[48px] h-[36px] justify-center items-center px-[5px] cursor-pointer transition-all !duration-[0.3s]  bg-transparent rounded-[7px] ml-[15px]"
+              className="flex screen3:hidden screen15:w-[48px] w-[37px] justify-center items-center px-[5px] cursor-pointer transition-all !duration-[0.3s]  bg-transparent rounded-[7px] screen15:ml-[15px] ml-[10px]"
               // style={{ boxShadow: "#6767679c 0px 1px 7px -2px" }}
             >
               <GrLocation className="text-[29px]" />
             </div>
             <div
-              className="flex screen3:hidden w-[48px] h-[36px] justify-center items-center px-[5px] cursor-pointer transition-all !duration-[0.3s] bg-transparent  rounded-[7px] ml-[7px]"
+              className="flex screen3:hidden screen15:w-[48px] w-[37px] justify-center items-center px-[5px] cursor-pointer transition-all !duration-[0.3s] bg-transparent  rounded-[7px] screen15:ml-[7px] ml-[5px]"
               // style={{ boxShadow: "#6767679c 0px 1px 7px -2px" }}
             >
               <IoMdNotificationsOutline className="text-[29px]" />
